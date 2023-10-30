@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Bubo GPT">
-  <meta name="keywords" content="multimodal chatbot">
+  <meta name="description" content="SewFormer">
+  <meta name="keywords" content="Sew Pattern Recovery">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BuboGPT</title>
+  <title>SewFormer</title>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./images/logo.png">
+  <link rel="icon" href="https://img.icons8.com/bubbles/100/t-shirt.png">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
@@ -101,6 +101,13 @@
     margin-bottom: 10px;
   }
 
+  .disabled-link {
+    color: grey;
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+  }
+
   #gradio pre {
     background-color: transparent;
   }
@@ -114,32 +121,34 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title"><img id="painting_icon" width="5%" src="./images/logo.png"> BuboGPT:</h1>
-            <h3 class="title is-3 publication-title">Enabling Visual Grounding in Multi-Modal LLMs</h3>
+            <!--<h1 class="title is-1 publication-title"><img id="painting_icon" width="5%" src="./images/logo.png"> BuboGPT:</h1>-->
+            <h2 class="title is-2 publication-title">Towards Garment Sewing Pattern Reconstruction from a Single Image
+            </h2>
             <div class="is-size-5">
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=uPmTOHAAAAAJ&hl=en" style="color:#f68946;font-weight:normal;">Yang Zhao<sup>*</sup></a>,
+                <a href="https://scholar.google.com/citations?user=nANxp5wAAAAJ&hl=en"
+                  style="color:#f68946;font-weight:normal;">Lijuan Liu<sup>*</sup></a>,
               </span>
               <span class="author-block">
-		      <a href="https://scholar.google.com/citations?user=xXMj6_EAAAAJ&hl=zh-CN" style="color:#f68946;font-weight:normal;">Zhijie Lin<sup>*</sup></a>,
+                <a href="https://scholar.google.com/citations?user=Ec5Biz4AAAAJ"
+                  style="color:#f68946;font-weight:normal;">Xiangyu Xu<sup>*</sup></a>,
               </span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=DdCAbWwAAAAJ&hl=en" style="color:#f68946;font-weight:normal;">Daquan Zhou</a>,
+                <a href="https://scholar.google.com/citations?user=xXMj6_EAAAAJ&hl=zh-CN"
+                  style="color:#f68946;font-weight:normal;">Zhijie Lin<sup>*</sup></a>,
               </span>
               <span class="author-block">
-                <a href="https://scholar.google.com.sg/citations?user=GW9vw8UAAAAJ&hl=en" style="color:#f68946;font-weight:normal;">Zilong Huang</a>,
+                <a style="color:#f68946;font-weight:normal;">Jiabin Liang<sup>*</a>,
               </span>
               <span class="author-block">
-                <a href="https://sites.google.com/site/jshfeng/" style="color:#f68946;font-weight:normal;">Jiashi Feng</a>,
-              </span>
-              <span class="author-block">
-                <a href="https://scholar.google.com.sg/citations?user=NmHgX-wAAAAJ&hl=en" style="color:#f68946;font-weight:normal;">Bingyi Kang<sup>+</sup></a>,
+                <a href="https://yanshuicheng.info/" style="color:#f68946;font-weight:normal;">Shuicheng
+                  Yan<sup>+<sup></a>,
               </span>
             </div>
 
             <br>
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Bytedance Inc.</span>
+              <span class="author-block"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Sea AI Lab</span>
               <span class="author-block">&nbsp&nbsp<sup>*</sup>Equal Contribution</span>
               <span class="author-block">&nbsp&nbsp<sup>+</sup>Project Lead</span>
             </div>
@@ -148,17 +157,16 @@
             <div class="column has-text-centered">
               <div class="publication-links">
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2307.08581" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
+                  <a href="..." target="_blank" class="disabled-link button is-normal is-rounded">
                     <span class="icon">
+                      <!-- <a class="disabled-link" > -->
                       <i class="ai ai-arxiv"></i>
                     </span>
                     <span>arXiv</span>
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://github.com/magic-research/bubogpt" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
+                  <a href="Coming Soon" target="_blank" class="disabled-link button is-normal is-rounded">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
@@ -166,24 +174,14 @@
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://huggingface.co/spaces/magicr/BuboGPT" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="far fa-images"></i>
-                    </span>
-                    <span>Demo</span>
-                  </a>
-                </span>
-                <span class="link-block">
-                  <a href="https://huggingface.co/datasets/magicr/BuboGPT/" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
+                  <a href="Coming Soon" target="_blank" class="disabled-link button is-normal is-rounded">
                     <span class="icon">
                       <i class="fas fa-database"></i>
                     </span>
                     <span>Dataset</span>
                   </a>
                 </span>
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://huggingface.co/magicr/BuboGPT-ckpt/resolve/main/bubogpt_7b.pth" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -191,10 +189,10 @@
                     </span>
                     <span>Model</span>
                   </a>
-                </span>
+                </span> -->
 
 
-                
+
 
                 <!-- <span class="link-block">
                 <a href="#"
@@ -216,32 +214,29 @@
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body">
-        <h4 class="subtitle has-text-centered">
-	  BuboGPT is an advanced Large Language Model (LLM) that incorporates multi-modal inputs including text, image and audio, 
-	  with a unique ability to ground its responses to visual objects. It demonstrates remarkable chat abilities for arbitrary 
-	  image-audio data understanding, whether aligned or unaligned.
-        </h4>
-
+        
         <div class="columns is-centered has-text-centered">
-    <div class="column is-six-fifths">
-      <iframe width="900" height="500" src="https://www.youtube.com/embed/uRdmC3wPz6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
-      <div class="is-size-6 publication-authors">
-        <span class="author-block"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Bubo owls are well known for having strong
-          <strong>vision</strong> and <strong>hearing</strong> abilities that help them thrive.</span>
-      </div>
-    </div>
-  </div>
+        <div class="column is-six-fifths">
+        <img id="teaser" width=90%" src="imgs/representative.jpg">
+        <div class="is-size-6 publication-authors">
+          <span class="author-block"> Given a single RGB image of a clothed human (a), the proposed algorithm can accurately recover the
+            underlying garment sewing pattern (b), leading to
+            wide applications in virtual/augmented reality, for example, 3D garment mesh reconstruction (c) and 3D
+            garment editing in terms of garment texture (d),
+            human shape (e), and human pose (f).</span>
+        </div>
+        </div>
       </div>
     </div>
   </section>
 
-<!--  <section class="section"  style="background-color:#efeff081">-->
-<!--    <div class="container is-max-desktop" id="gradio">-->
-<!--      <gradio-app src="https://llava.hliu.cc"></gradio-app>-->
-<!--    </div>-->
-<!--  </section>-->
+  <!--  <section class="section"  style="background-color:#efeff081">-->
+  <!--    <div class="container is-max-desktop" id="gradio">-->
+  <!--      <gradio-app src="https://llava.hliu.cc"></gradio-app>-->
+  <!--    </div>-->
+  <!--  </section>-->
 
-  <section class="section"  style="background-color:#efeff081">
+  <section class="section" style="background-color:#efeff081">
     <div class="container is-max-desktop">
       <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
@@ -249,187 +244,274 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              LLMs have demonstrated remarkable abilities at interacting with humans through language, especially with the usage of instruction-following data. Recent advancements in LLMs, such as MiniGPT-4, LLaVA, and X-LLM, further enlarge their abilities by incorporating multi-modal inputs, including image, video, and speech. 
-		    Despite their effectiveness at generating precise and detailed language understanding of the given modality signal, these LLMs give up the ability to ground specific parts of inputs, thus only constructing a coarse-grained mapping. However, explicit and informative correspondence between text and other modalities will not only improve the user experience but also help to expand the application scenario of multi-modal LLMs.
-              <ol type="1">
+              Garment sewing pattern represents the intrinsic rest shape of a garment,
+              and is the core for many applications like fashion design, virtual try-on,
+              and digital avatars. In this work, we explore the challenging problem of
+              recovering garment sewing patterns from daily photos for augmenting these
+              applications. To solve the problem, we first synthesize a versatile dataset,
+              named <strong>SewFactory</strong>, which consists of around 1M images and ground-truth
+              sewing patterns for model training and quantitative evaluation. SewFactory
+              covers a wide range of human poses, body shapes, and sewing patterns,
+              and possesses realistic appearances thanks to the proposed human texture
+              synthesis network. Then, we propose a two-level Transformer network
+              called <strong>SewFormer</strong>, which significantly improves the sewing pattern prediction
+              performance. Extensive experiments demonstrate that the proposed
+              framework is effective in recovering sewing patterns and well generalizes
+              to casually-taken human photos.
+              <!-- <ol type="1">
                 <li><b>BuboGPT Architecture </b>. <span style="font-size: 95%;">We build a multi-modal LLM, BuboGPT for multi-modal understanding including image, audio and text by learning a common semantic space and further explore the fine-grained relation between different visual objects and different modalities. </span></li>
                 <li><b>Multimodal Instruct Data</b>. <span style="font-size: 95%;">We construct a high-quality multi-modal instruction-tuning dataset including fine-grained audio descriptions and cross-modal sound localization, and introduce both positive and negative image-audio pairs for semantic matching to facilitate the cross-modal understanding..</li>
-              </ol>  
-           </p>
-  
+              </ol>   -->
+            </p>
+
           </div>
         </div>
       </div>
-        
+
     </div>
   </section>
 
 
-  
-<section class="section">
-  <!-- Results. -->
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-six-fifths">
-      <h2 class="title is-3"><img id="painting_icon" width="3%" src="https://cdn-icons-png.flaticon.com/512/5886/5886212.png"> BuboGPT Architecture</h2>
+
+  <section class="section">
+    <!-- Results. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-six-fifths">
+        <h2 class="title is-3"><img id="painting_icon" width="4%" src="https://img.icons8.com/bubbles/100/database.png">
+          SewFactory</h2>
+      </div>
     </div>
-  </div>
-  <!-- </div> -->
-  <!--/ Results. -->    
-<div class="container is-max-desktop">
+    <!-- </div> -->
+    <!--/ Results. -->
+    <div class="container is-max-desktop">
 
-  <div class="columns is-centered">
-    <div class="column is-full-width">
-      <div class="content has-text-justified">
-        <p>
-          As the figure shown, we perform joint multi-modal understanding and chatting for text, vision and audio,
-          which is achieved by learning a shared representation space that aligns well with pre-trained <a href="https://github.com/lm-sys/FastChat">Vicuna</a>.
-          We also build an off-the-shelf visual grounding pipeline to explore the fine-grained relation between different visual objects and modalities.
-		<figure style="text-align: center;">
-          <img id="teaser" width="100%" src="images/bubogpt.png">  
-          <figcaption>
-            The framework of BuboGPT.
-          </figcaption>
-        </figure>
-<!--		Please check out ``LLaVA-Instruct-150K''' on -->
-<!--          <a href="https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K">[HuggingFace Dataset]</a>.-->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="content has-text-justified">
+            <p>
+              We present a new dataset, SewFactory, for sewing pattern recovery from a single image. 
+              A comprehensive comparison betwee SewFactory and other existing garment datasets can be 
+              found in the below table. Notably, SewFactory possesses high pose variability and a diverse
+              range of garments and human textures, which effectively closes the domain gap with real-word
+              inputs.
+            <!--		Please check out ``LLaVA-Instruct-150K''' on -->
+            <!--          <a href="https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K">[HuggingFace Dataset]</a>.-->
 
-<!-- CSS Code: Place this code in the document's head (between the 'head' tags) -->
-<style>
-  table.GeneratedTable {
-    width: 100%;
-    background-color: #ffffff;
-    border-collapse: collapse;
-    border-width: 2px;
-    border-color: #c1c4c5;
-    border-style: solid;
-    color: #000000;
-  }
-  
-  table.GeneratedTable td, table.GeneratedTable th {
-    border-width: 2px;
-    border-color: #9b9d9e;
-    border-style: solid;
-    padding: 3px;
-  }
-  
-  table.GeneratedTable thead {
-    background-color: #6691ee;
-  }
-  </style>
-  
-  <!-- HTML Code: Place this code in the document's body (between the 'body' tags) where the table should appear -->
-<!--  <div class="column is-six-fifths" width="80%">-->
-<!--  <table class="GeneratedTable">-->
-<!--    <thead>-->
-<!--      <tr>-->
-<!--        <th>Data file name</th>-->
-<!--        <th>File Size</th>-->
-<!--        <th>Sample Size</th>-->
-<!--      </tr>-->
-<!--    </thead>-->
-<!--    <tbody>-->
-<!--      <tr>-->
-<!--        <td><a href="https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K/raw/main/conversation_58k.json">conversation_58k.json</a> </td>-->
-<!--        <td>126 MB</td>-->
-<!--        <td>58K</td>-->
-<!--      </tr>-->
-<!--      <tr>-->
-<!--        <td><a href="https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K/raw/main/detail_23k.json">detail_23k.json</a></td>-->
-<!--        <td>20.5 MB</td>-->
-<!--        <td>23K</td>-->
-<!--      </tr>-->
-<!--      <tr>-->
-<!--        <td><a href="https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K/raw/main/complex_reasoning_77k.json">complex_reasoning_77k.json</a></td>-->
-<!--        <td>79.6 MB</td>-->
-<!--        <td>77K</td>-->
-<!--      </tr>-->
-<!--    </tbody>-->
-<!--  </table>-->
-<!--</div>-->
-<!--  &lt;!&ndash; Codes by Quackit.com &ndash;&gt;-->
-<!--  -->
-<!--        </p>-->
-<!--        <p>-->
-<!--          For each subset, we visualize the root noun-verb pairs for the instruction and response. For each chart, please click the link for the interactive page to check out the noun-verb pairs whose frequency is higher the given number.        -->
-<!--        </p>-->
-<!--      </div>-->
+            <!-- CSS Code: Place this code in the document's head (between the 'head' tags) -->
+            <style>
+              table.GeneratedTable {
+                width: 100%;
+                background-color: #ffffff;
+                border-collapse: collapse;
+                border-top-width: 2px;
+                border-bottom-width: 2px;
+                border-color: #060606;
+                border-style: solid;
+                color: #000000;
+                text-align: center;
+                vertical-align: middle;
+              }
 
-<!--  -->
+              table.GeneratedTable td,
+              table.GeneratedTable th {
+                border-width: 2px;
+                border-top-width: 2px;
+                border-bottom-width: 2px;
+                border-color: #000000;
+                border-style: hidden;
+                padding: 3px;
+              }
+
+              table.GeneratedTable thead {
+                background-color: #f6f7f8;
+              }
+              /* Override the right border for the first <td> of every <tr> */
+              table.GeneratedTable tr > td:first-child {
+                  border-right: 2px solid #000000;
+              }
+
+              /* Similarly, for headers if you have them */
+              table.GeneratedTable tr > th:first-child {
+                  border-right: 2px solid #000000;
+              }
+            </style>
+
+            <!-- HTML Code: Place this code in the document's body (between the 'body' tags) where the table should appear -->
+             <div class="column is-centered is-six-fifths" width="80%">
+             <table class="GeneratedTable">
+               <thead>
+                 <tr>
+                   <th>Dataset</th>
+                   <th>Real/Syn</th>
+                   <th>#Garment</th>
+                   <th>Pose Var</th>
+                   <th>Sewing Pattern</th>
+                   <th>G-Texture Var</th>
+                   <th>H-Texture Var</th>
+
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <td><a href="https://virtualhumans.mpi-inf.mpg.de/mgn/">MGN</a> </td>
+                   <td>Real</td>
+                   <td>712</td>
+                   <td>Low</td>
+                   <td>None</td>
+                   <td>Low</td>
+                   <td>Low</td>
+                 </tr>
+                 <tr>
+                   <td><a href="https://kv2000.github.io/2020/03/25/deepFashion3DRevisited/">DeepFashion3D</td>
+                    <td>Real</td>
+                    <td>563</td>
+                    <td>Low</td>
+                    <td>None</td>
+                    <td>Low</td>
+                    <td>None</td>
+                 </tr>
+                 <tr>
+                   <td><a href="https://www.albertpumarola.com/research/3DPeople/index.html">3DPeople</a></td>
+                   <td>Syn</td>
+                    <td>80</td>
+                    <td>High</td>
+                    <td>None</td>
+                    <td>Low</td>
+                    <td>Low</td>
+                 </tr>
+                 <tr>
+                  <td><a href="https://hbertiche.github.io/CLOTH3D/">CLOTH3D</a></td>
+                  <td>Syn</td>
+                   <td>11.3k</td>
+                   <td>High</td>
+                   <td>None</td>
+                   <td>High</td>
+                   <td>Low</td>
+                </tr>
+                <tr>
+                  <td><a href="https://geometry.cs.ucl.ac.uk/projects/2018/garment_design/">Wang et al.</a></td>
+                  <td>Syn</td>
+                   <td>8k</td>
+                   <td>None</td>
+                   <td>Yes</td>
+                   <td>Low</td>
+                   <td>None</td>
+                </tr>
+                <tr>
+                  <td><a href="https://github.com/maria-korosteleva/Garment-Pattern-Generator">Korosteleva and Lee</a></td>
+                  <td>Syn</td>
+                   <td>22.5K</td>
+                   <td>None</td>
+                   <td>Yes</td>
+                   <td>Low</td>
+                   <td>None</td>
+                </tr>
+                <tr>
+                  <td><strong>Ours</strong></td>
+                  <td><strong>Syn</strong></td>
+                   <td><strong>19.1K</strong></td>
+                   <td><strong>High</strong></td>
+                   <td><strong>Yes</strong></td>
+                   <td><strong>High</strong></td>
+                   <td><strong>High</strong></td>
+                </tr>
+               </tbody>
+             </table>
+            
+            <!-- </p>
+          </div>
+              <div>
+                <p> -->
+                Moreover, SewFactory provides abundant ground-truth labels as shown in below, which could
+                be potentially benefit many applications even beyond the task in this task.      
+                </p>
+                <centering>
+                 <figure style="text-align: center;">
+                  <img id="teaser" width="80%" src="imgs/sewfactorylabels.png">  
+                  <figcaption>
+                    From left to right, the labels include the image, the 3d human pose and shape, the densepose, 
+                    the sewing pattern, the garment mesh, the segmentation map, the depth and the normal.
+                  </figcaption>
+                </figure>
+              <!-- </centering> -->
+              </div>
+            <!--  -->
 
 
 
 
-<!--      <div class="columns is-centered has-text-centered">-->
-<!--      <div class="column is-six-fifths" style="display: flex; align-items: flex-start; justify-content: center;">  -->
-<!--        <figure style="text-align: center;">-->
-<!--          <img id="teaser" width="100%" src="images/LLaVA-Instruct-150K_noun_verb/conversation_58k_instruction_verb_noun_50.png">  -->
-<!--          <figcaption>-->
-<!--            Instruction: Conversation [<a href="images/LLaVA-Instruct-150K_noun_verb/conversation_58k_instruction_verb_noun_0.html">0</a>, <a href="images/LLaVA-Instruct-150K_noun_verb/conversation_58k_instruction_verb_noun_20.html">20</a>, <a href="images/LLaVA-Instruct-150K_noun_verb/conversation_58k_instruction_verb_noun_50.html">50</a>]-->
-<!--          </figcaption>-->
-<!--        </figure>-->
-<!--        <figure style="text-align: center;">-->
-<!--          <img id="teaser" width="100%" src="images/LLaVA-Instruct-150K_noun_verb/detail_23k_instruction_verb_noun_0.png">  -->
-<!--          <figcaption>-->
-<!--            Instruction: Detailed Description  [<a href="images/LLaVA-Instruct-150K_noun_verb/detail_23k_instruction_verb_noun_0.html">0</a>]-->
-<!--          </figcaption>-->
-<!--        </figure>-->
-<!--        <figure style="text-align: center;">-->
-<!--          <img id="teaser" width="100%" src="images/LLaVA-Instruct-150K_noun_verb/complex_reasoning_77k_instruction_verb_noun_50.png">  -->
-<!--          <figcaption>-->
-<!--            Instruction: Complex Reasoning   [<a href="images/LLaVA-Instruct-150K_noun_verb/complex_reasoning_77k_instruction_verb_noun_0.html">0</a>, <a href="images/LLaVA-Instruct-150K_noun_verb/complex_reasoning_77k_instruction_verb_noun_20.html">20</a>, <a href="images/LLaVA-Instruct-150K_noun_verb/complex_reasoning_77k_instruction_verb_noun_50.html">50</a>]-->
-<!--          </figcaption>-->
-<!--        </figure>-->
-<!--      </div>-->
-<!--      </div>  -->
+                 <!-- <div class="columns is-centered has-text-centered">--> 
+                 <!-- <div class="column is-six-fifths" style="display: flex; align-items: flex-start; justify-content: center;">  -->
+                   <!-- <figure style="text-align: center;"> -->
+                     <!-- <img id="teaser" width="100%" src="images/LLaVA-Instruct-150K_noun_verb/conversation_58k_instruction_verb_noun_50.png">  -->
+                     <!-- <figcaption> -->
+                       <!-- Instruction: Conversation [<a href="images/LLaVA-Instruct-150K_noun_verb/conversation_58k_instruction_verb_noun_0.html">0</a>, <a href="images/LLaVA-Instruct-150K_noun_verb/conversation_58k_instruction_verb_noun_20.html">20</a>, <a href="images/LLaVA-Instruct-150K_noun_verb/conversation_58k_instruction_verb_noun_50.html">50</a>] -->
+                     <!-- </figcaption> -->
+                   <!-- </figure> -->
+                   <!-- <figure style="text-align: center;"> -->
+            <!--          <img id="teaser" width="100%" src="images/LLaVA-Instruct-150K_noun_verb/detail_23k_instruction_verb_noun_0.png">  -->
+            <!--          <figcaption>-->
+            <!--            Instruction: Detailed Description  [<a href="images/LLaVA-Instruct-150K_noun_verb/detail_23k_instruction_verb_noun_0.html">0</a>]-->
+            <!--          </figcaption>-->
+            <!--        </figure>-->
+            <!--        <figure style="text-align: center;">-->
+            <!--          <img id="teaser" width="100%" src="images/LLaVA-Instruct-150K_noun_verb/complex_reasoning_77k_instruction_verb_noun_50.png">  -->
+            <!--          <figcaption>-->
+            <!--            Instruction: Complex Reasoning   [<a href="images/LLaVA-Instruct-150K_noun_verb/complex_reasoning_77k_instruction_verb_noun_0.html">0</a>, <a href="images/LLaVA-Instruct-150K_noun_verb/complex_reasoning_77k_instruction_verb_noun_20.html">20</a>, <a href="images/LLaVA-Instruct-150K_noun_verb/complex_reasoning_77k_instruction_verb_noun_50.html">50</a>]-->
+            <!--          </figcaption>-->
+            <!--        </figure>-->
+            <!--      </div>-->
+            <!--      </div> 
 
 
 
-<!--      <div class="columns is-centered has-text-centered">-->
-<!--        <div class="column is-six-fifths" style="display: flex; align-items: flex-start; justify-content: center;">  -->
-<!--          <figure style="text-align: center;">-->
-<!--            <img id="teaser" width="100%" src="images/LLaVA-Instruct-150K_noun_verb/conversation_58k_response_verb_noun_50.png">  -->
-<!--            <figcaption>-->
-<!--              Response: Conversation [<a href="images/LLaVA-Instruct-150K_noun_verb/conversation_58k_response_verb_noun_0.html">0</a>, <a href="images/LLaVA-Instruct-150K_noun_verb/conversation_58k_response_verb_noun_20.html">20</a>, <a href="images/LLaVA-Instruct-150K_noun_verb/conversation_58k_response_verb_noun_50.html">50</a>]-->
-<!--            </figcaption>-->
-<!--          </figure>-->
-<!--          <figure style="text-align: center;">-->
-<!--            <img id="teaser" width="100%" src="images/LLaVA-Instruct-150K_noun_verb/detail_23k_response_verb_noun_50.png">  -->
-<!--            <figcaption>-->
-<!--              Response: Detailed Description  [<a href="images/LLaVA-Instruct-150K_noun_verb/detail_23k_response_verb_noun_0.html">0</a>, <a href="images/LLaVA-Instruct-150K_noun_verb/detail_23k_response_verb_noun_20.html">20</a>, <a href="images/LLaVA-Instruct-150K_noun_verb/detail_23k_response_verb_noun_50.html">50</a>]-->
-<!--            </figcaption>-->
-<!--          </figure>-->
-<!--          <figure style="text-align: center;">-->
-<!--            <img id="teaser" width="100%" src="images/LLaVA-Instruct-150K_noun_verb/complex_reasoning_77k_response_verb_noun_50.png">  -->
-<!--            <figcaption>-->
-<!--              Response: Complex Reasoning   [<a href="images/LLaVA-Instruct-150K_noun_verb/complex_reasoning_77k_response_verb_noun_0.html">0</a>, <a href="images/LLaVA-Instruct-150K_noun_verb/complex_reasoning_77k_response_verb_noun_20.html">20</a>, <a href="images/LLaVA-Instruct-150K_noun_verb/complex_reasoning_77k_response_verb_noun_50.html">50</a>]-->
-<!--            </figcaption>-->
-<!--          </figure>-->
-<!--        </div>-->
-<!--        </div>      -->
+            <!--      <div class="columns is-centered has-text-centered">-->
+            <!--        <div class="column is-six-fifths" style="display: flex; align-items: flex-start; justify-content: center;">  -->
+            <!--          <figure style="text-align: center;">-->
+            <!--            <img id="teaser" width="100%" src="images/LLaVA-Instruct-150K_noun_verb/conversation_58k_response_verb_noun_50.png">  -->
+            <!--            <figcaption>-->
+            <!--              Response: Conversation [<a href="images/LLaVA-Instruct-150K_noun_verb/conversation_58k_response_verb_noun_0.html">0</a>, <a href="images/LLaVA-Instruct-150K_noun_verb/conversation_58k_response_verb_noun_20.html">20</a>, <a href="images/LLaVA-Instruct-150K_noun_verb/conversation_58k_response_verb_noun_50.html">50</a>]-->
+            <!--            </figcaption>-->
+            <!--          </figure>-->
+            <!--          <figure style="text-align: center;">-->
+            <!--            <img id="teaser" width="100%" src="images/LLaVA-Instruct-150K_noun_verb/detail_23k_response_verb_noun_50.png">  -->
+            <!--            <figcaption>-->
+            <!--              Response: Detailed Description  [<a href="images/LLaVA-Instruct-150K_noun_verb/detail_23k_response_verb_noun_0.html">0</a>, <a href="images/LLaVA-Instruct-150K_noun_verb/detail_23k_response_verb_noun_20.html">20</a>, <a href="images/LLaVA-Instruct-150K_noun_verb/detail_23k_response_verb_noun_50.html">50</a>]-->
+            <!--            </figcaption>-->
+            <!--          </figure>-->
+            <!--          <figure style="text-align: center;">-->
+            <!--            <img id="teaser" width="100%" src="images/LLaVA-Instruct-150K_noun_verb/complex_reasoning_77k_response_verb_noun_50.png">  -->
+            <!--            <figcaption>-->
+            <!--              Response: Complex Reasoning   [<a href="images/LLaVA-Instruct-150K_noun_verb/complex_reasoning_77k_response_verb_noun_0.html">0</a>, <a href="images/LLaVA-Instruct-150K_noun_verb/complex_reasoning_77k_response_verb_noun_20.html">20</a>, <a href="images/LLaVA-Instruct-150K_noun_verb/complex_reasoning_77k_response_verb_noun_50.html">50</a>]-->
+            <!--            </figcaption>-->
+            <!--          </figure>-->
+            <!--        </div>-->
+            <!--        </div>      -->
 
-<!--    </div>-->
-<!--  </div>-->
+            <!--    </div>-->
+            <!--  </div>-->
 
 
-</section>
- 
+  </section>
 
-<section class="section">
-  <!-- Results. -->
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-six-fifths">
-      <h2 class="title is-3"><img id="painting_icon" width="3%" src="https://cdn-icons-png.flaticon.com/512/5379/5379860.png"> BuboGPT: Training Procedure</h2>
+
+  <section class="section">
+    <!-- Results. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-six-fifths">
+        <h2 class="title is-3"><img id="painting_icon" width="4%"
+            src="https://img.icons8.com/bubbles/100/statistics.png"> SewFormer</h2>
+      </div>
     </div>
-  </div>
-  <!-- </div> -->
-  <!--/ Results. -->    
-<div class="container is-max-desktop">
+    <!-- </div> -->
+    <!--/ Results. -->
+    <div class="container is-max-desktop">
 
-  <div class="columns is-centered">
-    <div class="column is-full-width">
-      <div class="content has-text-justified"> 
-        <p>
-          BuboGPT connects different modality Q-Former with pre-trained large language model <a href="https://github.com/lm-sys/FastChat">Vicuna</a>, using a simple projection matrix.   We consider a two-stage instruction-tuning procedure:
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="content has-text-justified">
+            <p>
+              <!-- BuboGPT connects different modality Q-Former with pre-trained large language model <a href="https://github.com/lm-sys/FastChat">Vicuna</a>, using a simple projection matrix.   We consider a two-stage instruction-tuning procedure:
           <ul type="1">
             <li><b>Stage 1:  Single-modal Pre-training</b>. <span style="font-size: 95%;">We train the corresponding modality Q-Former and linear projection layer on a large number of modality-text paired
 data.</span></li>
@@ -441,111 +523,183 @@ dataset to fine tune only the linear projection layer:
                 <li> <b>Audio-Image-Text</b>: We build &lt;audio, image, text&gt; pairs to act as triple-modality instruction tuning dataset based on <a href="https://arxiv.org/abs/2104.02691">VGGSS</a> dataset
                   and further introduce negative set to enhance our model.</span></li>
               </ul>  
-          </ul>  
-<!--          Please check out ``LLaVA-13b-delta-v0'' model checkpoint on -->
-<!--          <a href="https://huggingface.co/liuhaotian/LLaVA-13b-delta-v0">[HuggingFace Models]</a>.-->
-        </p>
+          </ul>  -->
+              <!--          Please check out ``LLaVA-13b-delta-v0'' model checkpoint on -->
+              <!--          <a href="https://huggingface.co/liuhaotian/LLaVA-13b-delta-v0">[HuggingFace Models]</a>.-->
+              As the figure shown, SewFormer consists of three main components: (a) a visual encoder to learn sequential visual
+              representions from the input image, (b) a two-level Transformer decoder to obtain the sewing pattern in a hierarchical
+              manner, and (c) a stitch prediction module that recovers how different panels are stitched together to form a garment.
+            </p>
+          </div>
+          <centering>
+            <div style="text-align: center;">
+              <img id="teaser" width="80%" src="imgs/sewformer_framework_v4_page-0001.jpeg">
+              <figcaption>
+                The framework of SewFormer.
+              </figcaption>
+            </div>
+
+            <!--      -->
+            <!--      </centering>           -->
+        </div>
       </div>
-<!--      <centering>-->
-<!--        <div style="text-align: center;">-->
-<!--          <img id="teaser" width="70%" src="images/llava_arch.png">     -->
-<!--        </div>-->
-
-<!--      -->
-<!--      </centering>           -->
-    </div>
-  </div>
 
 
-</section>
-  
+  </section>
 
 
-<!-- <section class="section">
+
+  <!-- <section class="section">
   <!-- Results. -->
-<!--   <div class="columns is-centered has-text-centered">
+  <!--   <div class="columns is-centered has-text-centered">
     <div class="column is-six-fifths">
       <h2 class="title is-3"><img id="painting_icon" width="3%" src="https://cdn-icons-png.flaticon.com/512/3515/3515174.png"> Performance</h2>
     </div>
-  </div> --> -->
+  </div> --> 
 
 
 
   <!-- </div> -->
-  <!--/ Results. -->    
-<!--<div class="container is-max-desktop">-->
+  <!--/ Results. -->
+  <!--<div class="container is-max-desktop">-->
 
 
-<!--  &lt;!&ndash; Grounedtext2img. &ndash;&gt;-->
-<!--  <div class="columns is-centered">-->
-<!--    <div class="column is-full-width">-->
-<!--      <h2 class="title is-4"><img id="painting_icon" width="4%" src="https://cdn-icons-png.flaticon.com/512/1698/1698535.png"> <span style="font-size: 100%;">Visual Chat:</span> Towards building multimodal GPT-4 level chatbot  </h2>-->
-<!--      -->
-<!--      <div>-->
-<!--        <a href="https://plotly.com/~lichunyuan24/5/?share_key=d78QObaCAYCIy8PJpe3gd1" target="_blank" title="llava_gpt4_pie" style="display: block; text-align: center;">  <img id="painting_icon" width="90%" src="images/pie_llava_gpt4.png"> </a>-->
+  <!--  &lt;!&ndash; Grounedtext2img. &ndash;&gt;-->
+  <!--  <div class="columns is-centered">-->
+  <!--    <div class="column is-full-width">-->
+  <!--      <h2 class="title is-4"><img id="painting_icon" width="4%" src="https://cdn-icons-png.flaticon.com/512/1698/1698535.png"> <span style="font-size: 100%;">Visual Chat:</span> Towards building multimodal GPT-4 level chatbot  </h2>-->
+  <!--      -->
+  <!--      <div>-->
+  <!--        <a href="https://plotly.com/~lichunyuan24/5/?share_key=d78QObaCAYCIy8PJpe3gd1" target="_blank" title="llava_gpt4_pie" style="display: block; text-align: center;">  <img id="painting_icon" width="90%" src="images/pie_llava_gpt4.png"> </a>-->
 
-<!--    </div>-->
+  <!--    </div>-->
 
-<!--    <p style="font-family:Times New Roman"><b>An evaluation dataset with 30 unseen images is constructed: each image is assocaited with three types of instructions: conversation, detailed description and complex reasoning. This leads to 90 new language-image instructions, on which we test LLaVA and GPT-4, and use GPT-4 to rate their responses from score 1 to 10. The summed score and relative score per type is reported. Overall, LLaVA achieves 85.1% relative score compared with GPT-4, indicating the effectinvess of the proposed self-instruct method in multimodal settings</b>               -->
-<!--    </div>-->
-<!--  </div>-->
+  <!--    <p style="font-family:Times New Roman"><b>An evaluation dataset with 30 unseen images is constructed: each image is assocaited with three types of instructions: conversation, detailed description and complex reasoning. This leads to 90 new language-image instructions, on which we test LLaVA and GPT-4, and use GPT-4 to rate their responses from score 1 to 10. The summed score and relative score per type is reported. Overall, LLaVA achieves 85.1% relative score compared with GPT-4, indicating the effectinvess of the proposed self-instruct method in multimodal settings</b>               -->
+  <!--    </div>-->
+  <!--  </div>-->
 
-<!--  &lt;!&ndash; Grounedtext2img. &ndash;&gt;-->
-<!--  <div class="columns is-centered">-->
-<!--    <div class="column is-full-width">-->
-<!--      <h2 class="title is-4"> <img id="painting_icon" width="3%" src="https://scienceqa.github.io/img/logo.png"><span style="font-size: 100%;"> Science QA:</span> New SoTA with the synergy of LLaVA with GPT-4</h2>-->
-<!--      -->
-<!--      <div>-->
-<!--        <a href="https://plotly.com/~lichunyuan24/1/?share_key=v4opE3TJpxqQ08RYsDD4iv" target="_blank" title="Plot 1" style="display: block; text-align: center;"><img id="painting_icon" width="65%" src="images/bar_llava_gpt4_scienceqa.png"></a>-->
-<!--        <script data-plotly="lichunyuan24:1" sharekey-plotly="v4opE3TJpxqQ08RYsDD4iv" src="https://plotly.com/embed.js" async></script>-->
-<!--    </div>-->
-<!--        <p style="font-family:Times New Roman"><b>LLaVA alones achieve 90.92%. We use the text-only GPT-4 as the juedge, to predict the final answer based on its own previous answers and the LLaVA answers. This ``GPT-4 as juedge'' scheme yields a new SOTA 92.53%.</b>-->
-<!--              -->
-<!--    </div>-->
-<!--  </div>-->
-<!-- </section> -->
-
-
+  <!--  &lt;!&ndash; Grounedtext2img. &ndash;&gt;-->
+  <!--  <div class="columns is-centered">-->
+  <!--    <div class="column is-full-width">-->
+  <!--      <h2 class="title is-4"> <img id="painting_icon" width="3%" src="https://scienceqa.github.io/img/logo.png"><span style="font-size: 100%;"> Science QA:</span> New SoTA with the synergy of LLaVA with GPT-4</h2>-->
+  <!--      -->
+  <!--      <div>-->
+  <!--        <a href="https://plotly.com/~lichunyuan24/1/?share_key=v4opE3TJpxqQ08RYsDD4iv" target="_blank" title="Plot 1" style="display: block; text-align: center;"><img id="painting_icon" width="65%" src="images/bar_llava_gpt4_scienceqa.png"></a>-->
+  <!--        <script data-plotly="lichunyuan24:1" sharekey-plotly="v4opE3TJpxqQ08RYsDD4iv" src="https://plotly.com/embed.js" async></script>-->
+  <!--    </div>-->
+  <!--        <p style="font-family:Times New Roman"><b>LLaVA alones achieve 90.92%. We use the text-only GPT-4 as the juedge, to predict the final answer based on its own previous answers and the LLaVA answers. This ``GPT-4 as juedge'' scheme yields a new SOTA 92.53%.</b>-->
+  <!--              -->
+  <!--    </div>-->
+  <!--  </div>-->
+  <!-- </section> -->
 
 
-<section class="section">
 
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-six-fifths">
-      <h2 class="title is-3"> <img id="painting_icon" width="3%" src="./images/logo.png"> Examples on Fine-grained Visual Understanding</h2>
-      <div class="container is-max-desktop">
-      <!-- Abstract. -->
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-six-fifths">
-            <div class="content has-text-justified">
-              <p>
-                We first consider using a single image as input for fine-grained visual understanding with grounding. As the exmaples shown,
-                the model can accurately associate textural words or phrases with image regions in various scenarios with different complexities.
-             </p>
 
+  <section class="section">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-six-fifths">
+        <h2 class="title is-3"> <img id="painting_icon" width="4%" src="https://img.icons8.com/bubbles/100/t-shirt.png">
+          Result Examples</h2>
+        <div class="container is-max-desktop">
+          <!-- Abstract. -->
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-six-fifths">
+              <div class="content has-text-justified">
+                <p>
+                  We showed some garment reproduction and editing results here. Each row shows an example. The first column is the input 
+                  RGB image, and the second column is the sewing pattern recovered by our model. The third column is the corresponding 
+                  normal map rendered based on the simulated 3D mesh and the last column shows some editing based on the recovered model.
+                </p>
+
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="container mt-5 is-centered  has-text-centered">
+    <!-- <div class="container mt-5 is-centered  has-text-centered">
     <img id="painting_icon" width="45%" src="./images/vision/Pic-1.jpg">
     <img id="painting_icon" width="45%" src="./images/vision/Pic-2.jpg">
     <img id="painting_icon" width="45%" src="./images/vision/Pic-3.jpg">
     <img id="painting_icon" width="45%" src="./images/vision/Pic-4.jpg">
     <img id="painting_icon" width="45%" src="./images/vision/Pic-5.jpg">
     <img id="painting_icon" width="45%" src="./images/vision/Pic-6.jpg">
-  </div>
+  </div> -->
+  <style>
+  table.GeneratedTable thead {
+    background-color: #ffffff;
+  }
+  </style>
+  <div class="column is-centered is-six-fifths" width="80%">
+    <table class="GeneratedTable">
+      <tbody>
+        <tr>
+          <td></td>
+          <td><img width="58%" src="imgs/results/jumpsuit_sleeveless_XVHV3X8WV9__0000_120_30/0000_120_30.png"> </td>
+          <td><img width="52%" src="imgs/results/jumpsuit_sleeveless_XVHV3X8WV9__0000_120_30/panels_panel_front.png"></td>
+          <td><video width="80%" controls>
+            <source src="imgs/results/jumpsuit_sleeveless_XVHV3X8WV9__0000_120_30/normal_out.mp4" type="video/mp4">
+        </video></td>
+        <td><video width="45%" controls>
+          <source src="imgs/results/jumpsuit_sleeveless_XVHV3X8WV9__0000_120_30/out_30_0.mp4" type="video/mp4">
+      </video></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><img width="58%" src="imgs/results/tee_sleeveless_1ZSN3FC1Y4_skirt_8_panels_T1P25E798D__-0050_60_30/-0050_60_30.png"> </td>
+          <td><img width="80%" src="imgs/results/tee_sleeveless_1ZSN3FC1Y4_skirt_8_panels_T1P25E798D__-0050_60_30/panels_panel_front.png"></td>
+          <td><video width="80%"  controls>
+            <source src="imgs/results/tee_sleeveless_1ZSN3FC1Y4_skirt_8_panels_T1P25E798D__-0050_60_30/normal_out.mp4" type="video/mp4">
+        </video></td>
+        <td><video width="45%"  controls>
+          <source src="imgs/results/tee_sleeveless_1ZSN3FC1Y4_skirt_8_panels_T1P25E798D__-0050_60_30/out_300_0.mp4" type="video/mp4">
+      </video></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><img width="40%" src="imgs/results/WOMEN-Rompers_Jumpsuits-id_00005043-04_4_full/WOMEN-Rompers_Jumpsuits-id_00005043-04_4_full.jpg"> </td>
+          <td><img width="80%" src="imgs/results/WOMEN-Rompers_Jumpsuits-id_00005043-04_4_full/panels_panel_front.png"></td>
+          <td><video width="80%" controls>
+            <source src="imgs/results/WOMEN-Rompers_Jumpsuits-id_00005043-04_4_full/normal_out.mp4" type="video/mp4">
+        </video></td>
+        <td><video width="45%"  controls>
+          <source src="imgs/results/WOMEN-Rompers_Jumpsuits-id_00005043-04_4_full/out_30_0.mp4" type="video/mp4">
+      </video></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><img width="40%" src="imgs/results/WOMEN-Skirts-id_00004507-02_1_front/WOMEN-Skirts-id_00004507-02_1_front.jpg"> </td>
+          <td><img width="80%" src="imgs/results/WOMEN-Skirts-id_00004507-02_1_front/panels_panel_front.png"></td>
+          <td><video width="80%"  controls>
+            <source src="imgs/results/WOMEN-Skirts-id_00004507-02_1_front/normal_out.mp4" type="video/mp4">
+        </video></td>
+        <td><video width="45%" controls>
+          <source src="imgs/results/WOMEN-Skirts-id_00004507-02_1_front/out_300_0.mp4" type="video/mp4">
+      </video></td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Input Image</th>
+          <th>Sewing Pattern</th>
+          <th>Simulated</th>
+          <th>Editing</th>
 
-  <br>
+        </tr>
+      </thead>
+    </table>
+
+    <!-- <br>
   <div class="columns is-centered has-text-centered">
     <div class="column is-six-fifths">
       <h2 class="title is-3"> <img id="painting_icon" width="3%" src="./images/logo.png"> Examples on Audio Understanding</h2>
-      <div class="container is-max-desktop">
-      <!-- Abstract. -->
-        <div class="columns is-centered has-text-centered">
+      <div class="container is-max-desktop">-->
+    <!-- Abstract. -->
+    <!-- <div class="columns is-centered has-text-centered">
           <div class="column is-six-fifths">
             <div class="content has-text-justified">
               <p>
@@ -558,24 +712,24 @@ dataset to fine tune only the linear projection layer:
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <div class="container mt-5 is-centered has-text-centered">
+    <!-- <div class="container mt-5 is-centered has-text-centered">
     <img id="painting_icon" width="45%" src="./images/audio/Aud-1.jpg">
     <img id="painting_icon" width="45%" src="./images/audio/Aud-2.jpg">
     <img id="painting_icon" width="45%" src="./images/audio/Aud-3.jpg">
     <img id="painting_icon" width="45%" src="./images/audio/Aud-4.jpg">
     <img id="painting_icon" width="45%" src="./images/audio/Aud-5.jpg">
     <img id="painting_icon" width="45%" src="./images/audio/Aud-6.jpg">
-  </div>
+  </div> -->
 
-  <br>
+    <!-- <br>
   <div class="columns is-centered has-text-centered">
     <div class="column is-six-fifths">
       <h2 class="title is-3"> <img id="painting_icon" width="3%" src="./images/logo.png"> Examples on Aligned audio-image understanding</h2>
-      <div class="container is-max-desktop">
-      <!-- Abstract. -->
-        <div class="columns is-centered has-text-centered">
+      <div class="container is-max-desktop"> -->
+    <!-- Abstract. -->
+    <!-- <div class="columns is-centered has-text-centered">
           <div class="column is-six-fifths">
             <div class="content has-text-justified">
               <p>
@@ -588,22 +742,22 @@ dataset to fine tune only the linear projection layer:
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <div class="container mt-5 is-centered   has-text-centered">
+    <!-- <div class="container mt-5 is-centered   has-text-centered">
     <img id="painting_icon" width="45%" src="./images/audio-image-aligned/Pic-Aud-1.jpg">
     <img id="painting_icon" width="45%" src="./images/audio-image-aligned/Pic-Aud-2.jpg">
     <img id="painting_icon" width="45%" src="./images/audio-image-aligned/Pic-Aud-3.jpg">
     <img id="painting_icon" width="45%" src="./images/audio-image-aligned/Pic-Aud-4.jpg">
-  </div>
+  </div> -->
 
-  <br>
+    <!-- <br>
   <div class="columns is-centered has-text-centered">
     <div class="column is-six-fifths">
       <h2 class="title is-3"> <img id="painting_icon" width="3%" src="./images/logo.png"> Examples on Arbitrary audio-image understanding</h2>
-      <div class="container is-max-desktop">
-      <!-- Abstract. -->
-        <div class="columns is-centered has-text-centered">
+      <div class="container is-max-desktop"> -->
+    <!-- Abstract. -->
+    <!-- <div class="columns is-centered has-text-centered">
           <div class="column is-six-fifths">
             <div class="content has-text-justified">
               <p>
@@ -616,80 +770,80 @@ dataset to fine tune only the linear projection layer:
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <div class="container mt-5 is-centered   has-text-centered">
+    <!-- <div class="container mt-5 is-centered   has-text-centered">
     <img id="painting_icon" width="45%" src="./images/audio-image-unaligned/Pic-Aud-5.jpg">
     <img id="painting_icon" width="45%" src="./images/audio-image-unaligned/Pic-Aud-6.jpg">
-  </div>
+  </div> -->
 
-<!--    <div class="columns is-centered has-text-centered">-->
-<!--      <div class="column is-six-fifths">-->
-<!--         <h2 class="title is-4">Visual Reasoning on two examples from <a href="https://arxiv.org/abs/2303.08774">OpenAI GPT-4 Technical Report</a></h2>-->
-<!--      </div>-->
-<!--      </div>  -->
+    <!--    <div class="columns is-centered has-text-centered">-->
+    <!--      <div class="column is-six-fifths">-->
+    <!--         <h2 class="title is-4">Visual Reasoning on two examples from <a href="https://arxiv.org/abs/2303.08774">OpenAI GPT-4 Technical Report</a></h2>-->
+    <!--      </div>-->
+    <!--      </div>  -->
 
-<!--    <div class="columns is-centered has-text-centered">-->
-<!--    <div class="column is-six-fifths">-->
-<!--      <img id="teaser" width="35%" src="images/cmp_ironing.png">-->
-<!--      <img id="teaser" width="38%" src="images/cmp_chicken_nugget.png">-->
-<!--    </div>-->
-<!--    </div>  -->
+    <!--    <div class="columns is-centered has-text-centered">-->
+    <!--    <div class="column is-six-fifths">-->
+    <!--      <img id="teaser" width="35%" src="images/cmp_ironing.png">-->
+    <!--      <img id="teaser" width="38%" src="images/cmp_chicken_nugget.png">-->
+    <!--    </div>-->
+    <!--    </div>  -->
 
-<!--  -->
+    <!--  -->
 
-<!--    <div class="columns is-centered has-text-centered">-->
-<!--      <div class="column is-six-fifths">-->
-<!--         <h2 class="title is-4">Optical character recognition (OCR)</a></h2>-->
-<!--      </div>-->
-<!--      </div>  -->
+    <!--    <div class="columns is-centered has-text-centered">-->
+    <!--      <div class="column is-six-fifths">-->
+    <!--         <h2 class="title is-4">Optical character recognition (OCR)</a></h2>-->
+    <!--      </div>-->
+    <!--      </div>  -->
 
-<!--    <div class="columns is-centered has-text-centered">-->
-<!--    <div class="column is-six-fifths" style="display: flex; align-items: flex-start; justify-content: center;">-->
-<!--        <img id="teaser" width="32%" src="images/ocr/llava_example_cvpr2023.png">-->
-<!--        <img id="teaser" width="32%" src="images/ocr/llava_example_cvinw_logo.png">-->
-<!--        <img id="teaser" width="32%" src="images/ocr/example_llava_exmaple.png">-->
-<!--    </div>-->
-<!--    </div>  -->
-
-  
-
-  
+    <!--    <div class="columns is-centered has-text-centered">-->
+    <!--    <div class="column is-six-fifths" style="display: flex; align-items: flex-start; justify-content: center;">-->
+    <!--        <img id="teaser" width="32%" src="images/ocr/llava_example_cvpr2023.png">-->
+    <!--        <img id="teaser" width="32%" src="images/ocr/llava_example_cvinw_logo.png">-->
+    <!--        <img id="teaser" width="32%" src="images/ocr/example_llava_exmaple.png">-->
+    <!--    </div>-->
+    <!--    </div>  -->
 
 
-<!--  <div class="container mt-5">-->
-<!--    &lt;!&ndash; <h2 class="text-center mb-5">Who's GPT-4's favorite? Battles between State-of-the-Art Chatbots</h2> &ndash;&gt;-->
-<!--    &lt;!&ndash; Selection &ndash;&gt;-->
-<!--    <div class="form-row" style="justify-content: flex-end;">-->
-<!--      <div class="form-group col-md-1">-->
-<!--        <div class="col-md-2" style="width: 100%"><label>&nbsp;</label></div>-->
-<!--        <div class="btn-group" role="group" aria-label="Left and Right Controller"-->
-<!--          style="width: 100%;align-items: flex-end;justify-content: center;flex-direction: row;display: flex;">-->
-<!--          <button type="button" class="form-control btn btn-primary" id="prev-question"><i-->
-<!--              class="material-icons">keyboard_arrow_left</i></button>-->
-<!--          <button type="button" class="form-control btn btn-primary" id="next-question"><i-->
-<!--              class="material-icons">keyboard_arrow_right</i></button>-->
 
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
 
-<!--    &lt;!&ndash; Question Card &ndash;&gt;-->
-<!--    <div style="display: flex; justify-content: center; align-items: center;">-->
-<!--      <div class="card mb-4" style="width: 100%; display: flex; align-items: center;">-->
-<!--        &lt;!&ndash; <p><b>Description:</b> Monalisa is a famous painting by Leonardo da Vinci. </p> &ndash;&gt;-->
 
-<!--        <div class="card-body" id="selected-question" style="display: flex; height: 80vh;">-->
-<!--          <div class="chat-history">-->
-<!--            &lt;!&ndash; Add your chat messages here &ndash;&gt;-->
-<!--          </div>-->
 
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
+    <!--  <div class="container mt-5">-->
+    <!--    &lt;!&ndash; <h2 class="text-center mb-5">Who's GPT-4's favorite? Battles between State-of-the-Art Chatbots</h2> &ndash;&gt;-->
+    <!--    &lt;!&ndash; Selection &ndash;&gt;-->
+    <!--    <div class="form-row" style="justify-content: flex-end;">-->
+    <!--      <div class="form-group col-md-1">-->
+    <!--        <div class="col-md-2" style="width: 100%"><label>&nbsp;</label></div>-->
+    <!--        <div class="btn-group" role="group" aria-label="Left and Right Controller"-->
+    <!--          style="width: 100%;align-items: flex-end;justify-content: center;flex-direction: row;display: flex;">-->
+    <!--          <button type="button" class="form-control btn btn-primary" id="prev-question"><i-->
+    <!--              class="material-icons">keyboard_arrow_left</i></button>-->
+    <!--          <button type="button" class="form-control btn btn-primary" id="next-question"><i-->
+    <!--              class="material-icons">keyboard_arrow_right</i></button>-->
 
-<!--  </div>-->
-</section>
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </div>-->
+
+    <!--    &lt;!&ndash; Question Card &ndash;&gt;-->
+    <!--    <div style="display: flex; justify-content: center; align-items: center;">-->
+    <!--      <div class="card mb-4" style="width: 100%; display: flex; align-items: center;">-->
+    <!--        &lt;!&ndash; <p><b>Description:</b> Monalisa is a famous painting by Leonardo da Vinci. </p> &ndash;&gt;-->
+
+    <!--        <div class="card-body" id="selected-question" style="display: flex; height: 80vh;">-->
+    <!--          <div class="chat-history">-->
+    <!--            &lt;!&ndash; Add your chat messages here &ndash;&gt;-->
+    <!--          </div>-->
+
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </div>-->
+
+    <!--  </div>-->
+  </section>
 
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
